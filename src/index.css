@@ -1,0 +1,464 @@
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('assets/images/student_thinking.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0f0f0f;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    padding: 0.75rem 1.5rem;
+    background: #b392e8;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero .btn:hover {
+    background: #6d05dc;
+}
+
+/* Content Sections */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    position: relative;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card p {
+    color: #777;
+}
+
+.icon-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #f0a500;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.icon-link i {
+    font-size: 20px;
+}
+
+.icon-link:hover {
+    background: #333;
+}
+
+/* Section Styles */
+#cover-letter {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#cover-letter h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#cover-letter p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Cover Letter Container */
+.cover-letter-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Card Container */
+.card {
+    position: relative;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    text-align: left;
+    width: 300px;
+    margin: 1rem auto;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card p {
+    color: #777;
+}
+
+/* Icon Link Styles */
+.icon-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #a86ce1;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.icon-link i {
+    font-size: 20px;
+}
+
+.icon-link:hover {
+    background: #5d0cde;
+}
+
+/* Section Styles */
+#blog {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#blog h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Blog Container */
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Allows containers to wrap to the next line */
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Upload */
+.profile-picture {
+    opacity: 0.75;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    overflow: hidden;
+  
+    /* default image */
+    background: url('https://qph.cf2.quoracdn.net/main-qimg-f32f85d21d59a5540948c3bfbce52e68');
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.file-uploader {
+    /* make it invisible */
+    opacity: 0;
+    /* make it take the full height and width of the parent container */
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    /* make it absolute */
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.upload-icon {
+    position: absolute;
+    border-radius: 50%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* initial icon state */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #ccc;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #bbb;
+}
+
+/* toggle icon state */
+.profile-picture:hover .upload-icon {
+    opacity: 1;
+}
+
+/* Content Text */
+.content-text {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content-text p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Author Info */
+.author-info {
+    color: #888;
+    font-size: 0.8rem;
+}
+
+.author-info p {
+    margin-bottom: 0.5rem;
+}
+
+.author-info strong {
+    color: #333;
+}
+
+/* Scroll Dots */
+.scroll-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/* Section Styles */
+#contact {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+#contact h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center form content */
+    height: 100%;
+}
+
+.contact-form form {
+    max-width: 400px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form elements vertically */
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-size: 1rem;
+    text-align: left; /* Align labels to the left */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%; /* Set input fields to 50% width */
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.contact-form textarea {
+    width: 100%; /* Textarea takes full width */
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form button[type="submit"] {
+    width: 50%; /* Set button width to 50% */
+    background-color: #aa7feb;
+    color: #0f0f0f;
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    max-width: 200px; /* Limit button width */
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #7009e6;
+}
+
+.contact-form button[type="submit"]:focus {
+    outline: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #a969ed;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.webpage-content, .social-links, .address {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.webpage-content h3, .social-links h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.webpage-content ul, .social-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.webpage-content ul li, .social-links ul li {
+    margin-bottom: 5px;
+}
+
+.webpage-content ul li a, .social-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.2rem;
+}
+
+.webpage-content ul li a:hover, .social-links ul li a:hover {
+    color: #09e01b;
+}
+
+.copy-rights {
+    margin-top: 20px;
+}
+
+.copy-rights p {
+    font-size: 0.8rem;
+    color: white;
+}
+
+/* Social Icons Styles */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #14e908;
+}

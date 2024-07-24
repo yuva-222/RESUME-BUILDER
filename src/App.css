@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Reset some basic elements */
+body, h1, h5, ul, li, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Header styling */
+.App-header {
+  background-color: #ad64ec;
+  color: #fff;
+  padding: 20px 0;
+  border-radius: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+/* Header title styling */
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+/* Search container styling */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+/* Search bar styling */
+.search-container input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  width: 80%;
+  max-width: 300px;
+}
+
+/* Search icon styling */
+.App-header.fa-search {
+    padding: 10px;
+    background: #fff;
+    color: #cc90e8;
+    border-radius: 0 10px 10px 0;
+    border: 1px;
+    cursor: pointer;
+}
+
+.App-header .fa-search:hover {
+    color: #7109df;
+}
+/* Navigation menu styling */
+.App-header ul {
+  list-style: none;
+  padding-top: 10px;
+}
+
+/* Navigation links styling */
+.App-header ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.App-header ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.App-header ul li a:hover {
+  color: #08e008;
+  text-decoration: underline;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
